@@ -1,0 +1,28 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Import css */
+@import url(header.css);
+@import url(body.css);
+@import url(footer.css);
+
+*{
+    font-family: Nunito;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor-titulo-principal: rgb(255, 216, 157);
+    --cor-texto: black;
+    --cor-fundo-principal: rgb(235, 248, 237);
+    --cor-texto-rodape: rgb(212, 212, 212);
+    --cor-fundo-rodape: rgb(59, 59, 59);
+    --cor-base-cinza: rgb(221, 221, 221);
+    --cor-fundo-prefacio: rgb(217, 255, 223);
+}
+

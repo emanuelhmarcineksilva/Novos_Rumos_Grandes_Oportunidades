@@ -1,0 +1,1333 @@
+/* As fotos utilizadas foram fotos tiradas no quintal de casa e editadas por mim em um aplicativo chamado "Adobe Express" */
+/* A "logo.ico" e o "tres-riscos.png" foram criadas com o uso do aplicatiovo ibisPaint X onde desenheis as imagens */
+
+body {
+    background-color: var(--cor-fundo-principal);
+}
+
+.container-principal {
+    background-color: azure;
+}
+
+/* Prefácio*/
+
+.container-prefacio-fundo {
+    width: 100%;
+    padding: 20vh 0;
+    background: var(--cor-fundo-prefacio);
+}
+
+.container-prefacio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 10% 60% 10%;
+    grid-template-areas: 
+    "titulo titulo"
+    "paragrafo paragrafo"
+    "lista informativo";
+    width: 70%;
+    margin: 1em auto;
+    background-color: var(--cor-base-cinza);
+    height: 70vh;
+    border-radius: 8px 80px 8px 80px;
+    box-shadow: rgba(0, 0, 0, 0.452) 8px 8px 15px;
+}
+
+.titulo-prefacio {
+    grid-area: titulo;
+    margin: auto;
+    font-size: 32px;
+}
+
+.paragrafo-prefacio {
+    grid-area: paragrafo;
+    font-size: 20px;
+    margin: auto;
+    color: black;
+}
+
+.container-lista-prefacio {
+    grid-area: lista;
+    display: grid;
+    padding: 1em 1em 0.4em 5em;
+}
+
+.lista-prefacio {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    margin: auto auto auto 2em;
+    padding: auto 0;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.lista-prefacio:first-child {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lista-prefacio:first-child:hover {
+    padding: 0;
+    cursor: default;
+}
+
+.lista-prefacio:hover {
+    padding-left: 1.2em;
+}
+
+.informativo-prefacio {
+    grid-area: informativo;
+    margin: auto 1.5em;
+    font-size: 18px;
+}
+
+/* Navegador lista */
+
+.navegador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    border: none;
+    border-radius: 10px 0 0 0;
+}
+
+.navegador img {
+    width: 70%;
+}
+
+.aparecer-esconder {
+    position: fixed;
+    bottom: -100%;
+    right: 0;
+    transition: all 1s;
+}
+
+.navegar-na-pagina {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-navegar {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 2px 4px;
+    text-align: start;
+}
+
+.numeros {
+    background-color: black;
+    width: 50PX;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 0;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.navegador:hover > .aparecer-esconder {
+    bottom: 90px;
+}
+
+.um {
+    border-radius: 14px 0 0 0;
+}
+
+/* animação lista */
+
+.um:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+.dois:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+.tres:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+.quatro:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+.cinco:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+.seis:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+.sete:hover {
+    background-color: rgb(2, 104, 10);
+}
+
+/* animação da lista com a descrição */
+
+.um:hover + .do-um {
+    right: 85px;
+}
+
+.dois:hover + .do-dois {
+    right: 85px;
+}
+
+.tres:hover + .do-tres {
+    right: 85px;
+}
+
+.quatro:hover + .do-quatro {
+    right: 85px;
+}
+
+.cinco:hover + .do-cinco {
+    right: 85px;
+}
+
+.seis:hover + .do-seis {
+    right: 85px;
+}
+
+.sete:hover + .do-sete {
+    right: 85px;
+}
+
+
+/* Descrição lista */
+
+.descricao-lista {
+    position: fixed;
+    right: -100%;
+    bottom: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 17px 0 0 17px;
+    transition: all 1s;
+}
+
+
+/* Todas as Bases */
+
+.container-bases-parte-imagem {
+    height: 80vh;
+}
+
+.divisor-bases-imagem {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "are branca trans trans"
+    "are trans-esq trans trans"
+    "are trans-esq trans trans"
+    "are trans-esq trans trans";
+}
+
+.titulo-base {
+    grid-area: are;
+}
+
+.titulo-estilo-base {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-base-cinza);
+    border-radius: 0 0 80px 0;
+}
+
+.h2-titulo-base {
+    font-size: 32px;
+    padding: 1.2em;
+}
+
+.base-branquinha {
+    grid-area: branca;
+}
+
+.base-branca {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-base-cinza);
+    border-radius: 0 0 80px 0;
+}
+
+.base-tranparentona {
+    grid-area: trans;
+}
+
+.base-tranparentona-aredonda-esquerda {
+    grid-area: trans-esq;
+    background-color: transparent;
+    border-radius: 80px 0 0 0;
+    box-shadow: -90px -90px 0 -70px var(--cor-base-cinza);
+}
+
+/* Dentro das bases */
+
+.conteudo-textos-bases {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em 1em;
+    background-color: var(--cor-fundo-principal);
+}
+
+.h3-titulo-bases {
+    font-size: 42px;
+    margin: 10px 0 5px;
+    text-align: center;
+}
+
+.h4-sub-titulo-bases {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-intro-paragrafo-bases{
+    margin-top: 1em;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 28px;
+    font-weight: bold;
+}
+
+.paragrafo-bases-centralizado{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+.paragrafo-bases {
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.texto-mais-imagem {
+    width: 80%;
+    height: 60vh;
+    margin: 20px auto;
+}
+
+.sombreado-texto-mais-imagem-direita {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+    grid-template-areas: "nada texto-direita imagem";
+    width: 100%;
+    height: 100%;
+}
+
+.imagem-que-aparece-texto-imagem {
+    grid-area: imagem;
+}
+
+.imagem-desafios-enfrentados {
+    background: url(./trevos-horizontal.png);
+}
+
+.paragrafo-texto-mais-imagem-direita {
+    display: flex;
+    justify-content: center;
+    grid-area: texto-direita;
+    font-size: 20px;
+    background: linear-gradient(90deg, #00000000, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.815));
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: auto auto;
+    color: white;
+}
+
+.paragrafo-texto-mais-imagem-direita p {
+    width: 90%;
+    margin: auto auto;
+}
+
+.sombreado-texto-mais-imagem-esquerda {
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-areas: "imagem texto-esquerda nada";
+    width: 100%;
+    height: 100%;
+}
+
+.paragrafo-texto-mais-imagem-esquerda {
+    display: flex;
+    justify-content: center;
+    grid-area: texto-esquerda;
+    font-size: 20px;
+    background: linear-gradient(270deg, #00000000, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.815));
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: auto auto;
+    color: white;
+}
+
+.paragrafo-texto-mais-imagem-esquerda p {
+    width: 90%;
+    margin: auto auto;
+}
+
+/* Listas */
+
+.lista-ordenada {
+    width: 70%;
+    margin: 0 auto 1em;
+}
+
+.cada-li-ordenada {
+    font-size: 20px;
+    padding: 4px 0;
+}
+
+/* 1° Entrevista */
+
+.img-entrevista {
+    background-image: url(couve.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+iframe {
+    width: 55%;
+    height: 100%;
+    margin: 1em;
+}
+
+.video-entrevista {
+    height: 65.7vh;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+/* 2° Migração para a cidade*/
+
+.img-migracao-para-a-cidade {
+    background-image: url(estrada-campo.png);
+    background-attachment: fixed;
+    background-position-y: -100px;
+    background-size: 100%;
+}
+
+.imagem-migracao1 {
+    background-image: url(cortando-cana.png);
+    background-position-x: 300px;
+    background-position-y: -50px;
+    background-size: 900px;
+}
+
+.imagem-migracao2 {
+    background-image: url(olhando-sol.png);
+    background-position-y: -200px;
+    background-size: 600px;
+}
+
+/* 3° Desafios enfrentados */
+
+.img-desafios-enfrentados {
+    background-image: url(raspando-cana.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.imagem-desafios1 {
+    background-image: url(moedor-cana.png);
+    background-position-x: -140px;
+    background-position-y: -40px;
+    background-size: 100%;
+}
+
+.imagem-desafios2 {
+    background-image: url(descendo-estrada2.png);
+    background-position-x: -300px;
+    background-size: 900px;
+}
+
+/* 4° Vantagens e desvantagens */
+
+.img-vantagens-e-desvantagens {
+    background-image: url(trevos-horizontal.png);
+    background-attachment: fixed;
+    background-position: -100px;
+}
+
+.imagem-vantagens-desvantagens1 {
+    background-image: url(folhas-pequenas-planta-rasteira.png);
+    background-position-x: 0;
+    background-position-y: -50px;
+    background-size: 100%;
+}
+
+.imagem-vantagens-desvantagens2 {
+    background-image: url(carpindo.png);
+    background-size: 520px;
+}
+
+/* 5° Oportunidades */
+
+.img-oportunidades {
+    background-image: url(escada.png);
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.imagem-oportunidades1 {
+    background-image: url(gravetos.png);
+    background-position-x: 0;
+    background-position-y: -50px;
+    background-size: 100%;
+}
+
+.imagem-oportunidades2 {
+    background-image: url(subindo-estrada.png);
+    background-position-x: -100px;
+    background-size: 900px;
+}
+
+/* 6° Diversidade cultural */
+
+.img-diversidade-cultural {
+    background-image: url(graviola.png);
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.imagem-diversidade1 {
+    background-image: url(pe-jabuticaba.png);
+    background-size: 1100px;
+}
+
+.imagem-diversidade2 {
+    background-image: url(flores.png);
+    background-position-x: -100px;
+    background-position-y: -100px;
+    background-size: 900px;
+}
+
+/* 7° Contato */
+
+.imagem-comentario {
+    background-image: url(mamao.png);
+    background-attachment: fixed;
+    background-position: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+
+.container-comentario {
+    width: 54%;
+    margin: 2em auto;
+}
+
+.caixa-visual-comentario {
+    display: flex;
+    width: 100%;
+    background-color: rgb(207, 253, 215);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 0;
+    box-shadow: rgba(0, 0, 0, 0.452) 12px 12px 30px;
+    border-radius: 4px;
+}
+
+.titulo-comentario {
+    font-size: 38px;
+    margin: 1em 0 0.2em;
+}
+
+.paragrafo-comentario {
+    font-size: 20px;
+    margin: 10px auto 1em;
+    padding: 2px 2em;
+    text-align: center;
+}
+
+.label-comentario {
+    font-size: 20px;
+    margin: 0.4em auto 0.4em 0;
+}
+
+input {
+    width: 97%;
+    padding: 0.7em;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.caixa-label-comentario {
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.enviar {
+    margin: 1em 0;
+    padding: 0.8em 1.3em;
+    font-size: 18px;
+    border: solid 2px rgb(46, 255, 81);
+    border-radius: 8px;
+    background-color: rgb(113, 255, 137);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.enviar:hover {
+    scale: 1.1;
+}
+
+/* Interação LABEL com INPUT */
+
+.input-comentario {
+    transition: all 1s;
+}
+
+.input-comentario:focus {
+    background-color: rgb(124, 255, 139);
+    border: solid 1px rgb(4, 121, 23);
+    border-radius: 30px;
+    scale: 1.07;
+}
+
+/* Botão aparece e desaparece comentario */
+
+#btn-check-comentario {
+    margin: 1.8em 0 0.5em;
+    padding: 1em 1.2em;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(113, 255, 137);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btn-check-comentario:hover {
+    opacity: 0.7;
+}
+
+#checkbox-comentario {
+    display: none;
+}
+
+#checkbox-comentario:checked ~ .area-texto-comentario {
+    display: flex;
+}
+
+/* Parte que vai aparecer e sumir no comentario */
+
+.area-texto-comentario {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#area-comentario {
+    width: 97%;
+    padding: 0.7em;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.4s;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+#area-comentario:focus {
+    scale: 1.05;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 1030px) {
+    /* Prefácio */
+    .container-prefacio {
+        transition: all 1s ease;
+    }
+
+    .container-prefacio:hover {
+        box-shadow: rgba(2, 104, 48, 0.664) 4px 4px 30px;
+    }
+
+    /* Texto mais imagem */
+    .sombreado-texto-mais-imagem-direita {
+        transition: 2s ease;
+    }
+
+    .sombreado-texto-mais-imagem-direita:hover {
+        grid-template-columns: 0fr 1fr 1fr;
+    }
+
+    .sombreado-texto-mais-imagem-esquerda {
+        transition: all 2s ease;
+    }
+
+    .sombreado-texto-mais-imagem-esquerda:hover {
+        grid-template-columns: 1fr 1fr 0fr;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    /* Prefácio */
+
+    .container-prefacio-fundo {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+        height: 70vh;
+    }
+    
+    .container-prefacio {
+        width: 90%;
+        margin: auto;
+        height: 48vh;
+    }
+    
+    
+    .lista-prefacio:hover {
+        padding-left: 0;
+    }
+    
+    .informativo-prefacio {
+        font-size: 22px;
+    }
+
+    /* Lista navegação */
+
+    .navegador {
+        display: none;
+    }
+
+    /* Todas as Bases */
+
+    .container-bases-parte-imagem {
+        height: 50vh;
+    }
+
+    .divisor-bases-imagem {
+        grid-template-columns: 3fr 2fr 1fr 1fr;
+        grid-template-rows: 1.2fr 1.2fr 1fr 1fr 1fr 3fr;
+    }
+
+    .h2-titulo-base {
+        font-size: 38px;
+        padding-left: 2em ;
+    }
+
+    /* Dentro das bases */
+
+    .h3-titulo-bases {
+        font-size: 44px;
+    }
+
+    .h4-sub-titulo-bases {
+        font-size: 32px;
+    }
+
+    .titulo-intro-paragrafo-bases{
+        font-size: 28px;
+    }
+
+    .paragrafo-bases-centralizado{
+        font-size: 28px;
+    }
+
+    .paragrafo-bases {
+        font-size: 24px;
+    }
+
+    /* Texto mais imagem */
+
+    .sombreado-texto-mais-imagem-direita {
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: 1fr 0fr 0fr;
+        grid-template-areas: "nada texto-direita";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.295);
+    }
+    
+    .paragrafo-texto-mais-imagem-direita {
+        grid-area: texto-direita;
+        font-size: 22px;
+        width: 90%;
+        text-align: center;
+        margin: auto auto;
+        color: white;
+        background: transparent;
+    }
+
+
+    
+    .sombreado-texto-mais-imagem-esquerda {
+        display: grid;
+        grid-template-columns: 1fr 0fr;
+        grid-template-rows: 1fr 0fr 0fr;
+        grid-template-areas: "texto-esquerda nada";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.295);
+    }
+    
+    .paragrafo-texto-mais-imagem-esquerda {
+        grid-area: texto-esquerda;
+        font-size: 22px;
+        width: 90%;
+        text-align: center;
+        margin: auto auto;
+        color: white;
+        background: transparent;
+    }
+
+    .texto-mais-imagem {
+        width: 90%;
+        height: 30vh;
+        margin: 10px auto;
+    }
+
+    /* Listas */
+
+    .lista-ordenada {
+        width: 80%;
+    }
+
+    .cada-li-ordenada {
+        font-size: 24px;
+    }
+
+
+    /* 1° Entrevista */
+
+    .img-entrevista {
+        background-attachment: local;
+    }
+
+    iframe {
+        width: 80%;
+        height: 100%;
+    }
+
+    .video-entrevista {
+        height: 30vh;
+        margin-bottom: 1em;
+    }
+
+    /* 2° Migração para a cidade*/
+
+    .img-migracao-para-a-cidade {
+        background-attachment: local;
+        background-size: 200%;
+        background-position-x: -300px;
+    }
+
+    /* 3° Desafios enfrentados */
+
+    .img-desafios-enfrentados {
+        background-attachment: local;
+        background-size: 200%;
+        background-position-x: -300px;
+    }
+
+    /* 4° Vantagens e desvantagens */
+
+    .img-vantagens-e-desvantagens {
+        background-attachment: local;
+    }
+
+    /* 5° Oportunidades */
+
+    .img-oportunidades {
+        background-attachment: local;
+    }
+
+    /* 6° Diversidade cultural */
+
+    .img-diversidade-cultural {
+        background-attachment: local;
+    }
+
+    /* 7° Contato */
+
+    .imagem-comentario {
+        background-attachment: local;
+        padding: 4em;
+    }
+
+    .container-comentario {
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    .titulo-comentario {
+        font-size: 42px;
+        margin: 0.4em auto 0.2em;
+    }
+
+    .paragrafo-comentario {
+        font-size: 24px;
+    }
+
+    .label-comentario {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    #btn-check-comentario {
+        font-size: 22px;
+    }
+
+    #btn-check-comentario:hover {
+        opacity: 1;
+    }
+
+    #area-comentario {
+        font-size: 22px;
+    }
+
+    .enviar {
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    /* Prefácio */
+
+    .container-prefacio-fundo {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        height: 80vh;
+    }
+
+    .container-prefacio {
+        grid-template-columns: 1fr 1.4fr;
+        grid-template-rows: 20% 10% 60% 10%;
+        width: 90%;
+        margin: auto;
+        height: 90%;
+    }
+    
+    .titulo-prefacio {
+        font-size: 38px;
+    }
+
+    .paragrafo-prefacio {
+        font-size: 28px;
+        padding: 0 1em;
+    }
+
+    .container-lista-prefacio {
+        display: grid;
+        padding: 1em 1em 0.4em 2em;
+    }
+    
+    .lista-prefacio {
+        font-size: 20px;
+        margin: auto auto auto 1em;
+        padding: auto 0;
+        color: rgb(59, 155, 158);
+        text-decoration: revert;
+    }
+    
+    .lista-prefacio:first-child {
+        font-size: 24px;
+        color: black;
+    }
+    
+    
+    .lista-prefacio:hover {
+        padding-left: 0;
+    }
+    
+    .informativo-prefacio {
+        margin: auto 1em;
+        font-size: 20px;
+    }
+    
+    /* Todas as Bases */
+    
+    .container-bases-parte-imagem {
+        height: 38vh;
+    }
+    
+    .divisor-bases-imagem {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+    }
+    
+    .titulo-base {
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo-estilo-base {
+        width: 100%;
+        height: 58%;
+        background: linear-gradient(0deg, #00000000, #0000004f, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.904));
+        border-radius: 0;
+    }
+    
+    .h2-titulo-base {
+        font-size: 52px;
+        color: white;
+        text-align: center;
+    }
+
+    /* Texto mais imagem */
+
+    .texto-mais-imagem {
+        width: 100%;
+        height: 42vh;
+        margin: 20px auto;
+    }  
+
+    /* 1° Entrevista */
+
+    .img-entrevista {
+        background: url(flores.png);
+        background-attachment: fixed;
+        background-size: 200%;
+        background-position-x: -300px;
+    }
+
+    iframe {
+        width: 92%;
+        height: 100%;
+    }
+
+    .video-entrevista {
+        height: 30vh;
+        margin-bottom: 1em;
+    }
+
+    /* 2° Migração para a cidade*/
+
+    .img-migracao-para-a-cidade {
+        background-attachment: fixed;
+        background-size: 220%;
+        background-position-x: -300px;
+    }
+
+    .imagem-migracao1 {
+        background-image: url(cortando-cana.png);
+        background-position-x: 0;
+        background-position-y: 0;
+        background-size: 100%;
+    }
+
+    /* 3° Desafios enfrentados */
+
+    .img-desafios-enfrentados {
+        background-attachment: fixed;
+        background-size: 200%;
+        background-position-x: -300px;
+    }
+
+    
+    .imagem-desafios1 {
+        background-image: url(descendo-estrada2.png);
+        background-position-x: -500px;
+        background-position-y: -40px;
+        background-size: 200%;
+    }
+
+    /* 4° Vantagens e desvantagens */
+
+    .img-vantagens-e-desvantagens {
+        background: url(escada.png);
+        background-attachment: fixed;
+        background-position-x: -400px;
+    }
+
+    .imagem-vantagens-desvantagens1 {
+        background-image: url(carpindo.png);
+        background-size: 100%;
+    }
+
+    /* 5° Oportunidades */
+
+    .img-oportunidades {
+        background: url(olhando-sol.png);
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    /* 6° Diversidade cultural */
+
+    .img-diversidade-cultural {
+        background-attachment: fixed;
+        background-size: 180%;
+        background-position-x: -300px;
+    }
+
+    /* 7° Contato */
+
+    .imagem-comentario {
+        background-attachment: local;
+        padding: 3em;
+    }
+
+    .container-comentario {
+        width: 100%;
+        margin: 2em auto;
+    }
+
+    .paragrafo-comentario {
+        font-size: 24px;
+    }
+
+    .label-comentario {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    #btn-check-comentario {
+        font-size: 20px;
+    }
+
+    #area-comentario {
+        font-size: 20px;
+    }
+
+    .enviar {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .h2-titulo-base {
+        font-size: 38px;
+        padding: 0.8em 0.2em;
+    }
+
+    .h3-titulo-bases {
+        font-size: 30px;
+        padding: 0 0.5em;
+    }
+
+    .h4-sub-titulo-bases {
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .titulo-intro-paragrafo-bases{
+        font-size: 25px;
+    }
+
+    .paragrafo-bases-centralizado{
+        font-size: 27px;
+    }
+
+    .paragrafo-bases {
+        font-size: 22px;
+    }
+
+    /* Comentário */
+
+    .container-comentario {
+        margin: 0 auto;
+    }
+
+    .imagem-comentario {
+        padding: 0;
+    }
+
+    .caixa-visual-comentario {
+        background-color: rgba(0, 0, 0, 0.589);
+        box-shadow: none;
+        color: white;
+        min-height: 100vh;
+    }
+
+    #btn-check-comentario {
+        color: black;
+    }
+
+    #area-comentario {
+        background-color: rgba(255, 255, 255, 0.788);
+    }
+
+    .enviar {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .conteudo-textos-bases {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 1em;
+        background-color: var(--cor-fundo-principal);
+    }
+
+    .container-prefacio-fundo {
+        min-height: 100vh;
+    }
+
+    .container-prefacio {
+        grid-template-rows: 15% 10% 70% 5%;
+    }
+
+    .paragrafo-prefacio {
+        font-size: 22px;
+    }
+
+    .container-lista-prefacio {
+        padding: 1em 0.2em 0.4em;
+    }
+
+    /* Texto mais imagem */
+
+    .texto-mais-imagem {
+        width: 92%;
+        height: 50vh;
+        margin: 10px auto;
+    }
+
+    .sombreado-texto-mais-imagem-direita {
+        grid-template-columns: 0fr 1fr;
+        background: rgba(0, 0, 0, 0.582);
+    }
+    
+    .paragrafo-texto-mais-imagem-direita {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .sombreado-texto-mais-imagem-esquerda {
+        grid-template-columns: 1fr 0fr;
+        background: rgba(0, 0, 0, 0.582);
+    }
+
+    .paragrafo-texto-mais-imagem-esquerda {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    /* 1° Entrevista */
+    .img-entrevista {
+        background-attachment: fixed;
+        background-size: 300%;
+        background-position-x: -500px;
+    }
+    
+    /* 2° Migração para a cidade */
+    .img-migracao-para-a-cidade {
+        background-attachment: fixed;
+        background-size: 400%;
+        background-position-x: -650px;
+    }
+
+    .imagem-migracao1 {
+        background-size: 200%;
+    }
+
+    /* 3° Desafios enfrentados */
+
+    .img-desafios-enfrentados {
+        background-attachment: fixed;
+        background-size: 320%;
+        background-position-x: -400px;
+    }
+
+    .imagem-desafios1 {
+        background-position-x: -800px;
+        background-position-y: -40px;
+        background-size: 400%;
+    }
+
+    /* 4° Vantagens e desvantagens */
+
+    .img-vantagens-e-desvantagens {
+        background-attachment: fixed;
+        background-position-x: -580px;
+    }
+
+    .imagem-vantagens-desvantagens1 {
+        background-position-x: -200px;
+        background-size: 200%;
+    }
+
+    /* 5° Oportunidades */
+
+    .img-oportunidades {
+        background-attachment: fixed;
+        background-size: 200%;
+        background-position-x: -180px;
+    }
+
+    /* 6° Diversidade cultural */
+
+    .img-diversidade-cultural {
+        background-attachment: fixed;
+        background-size: 300%;
+        background-position-x: -300px;
+    }
+
+    /* 7° Contato */
+
+    .imagem-comentario {
+        background-attachment: local;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Prefácio */
+    .container-prefacio {
+        grid-template-columns: 1fr 1.4fr;
+        grid-template-rows: 15% 15% 60% 10%;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .container-lista-prefacio {
+        display: grid;
+        padding: 1em 0.2em 0.4em;
+    }
+
+    .paragrafo-prefacio {
+        font-size: 22px;
+    }
+
+    #btn-check-comentario {
+        font-size: 16px;
+    }
+
+    .enviar {
+        font-size: 18px;
+    }
+}

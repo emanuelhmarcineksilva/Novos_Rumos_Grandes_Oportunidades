@@ -1,0 +1,77 @@
+footer{
+    display: block;
+    width: 100%;
+    height: 40vh;
+    background-color: var(--cor-fundo-rodape);
+}
+
+.container-rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    background-color: var(--cor-fundo-rodape);
+}
+
+.container-rodape p {
+    color: var(--cor-texto-rodape);
+    font-size: 12px;
+    margin: 1px 0;
+    flex-wrap: nowrap;
+}
+
+.img-logo-rodape {
+    padding: 0;
+    width: 20%;
+    filter: drop-shadow(1px 1px 8px rgba(21, 255, 0, 0.568));
+    transition: all 1s;
+}
+
+.img-logo-rodape:hover {
+    filter: drop-shadow(1px 1px 30px rgba(0, 238, 255, 0.76));
+}
+
+@media screen and (max-width: 1024px) {
+    footer{
+        height: auto;
+    }
+    
+    .container-rodape p {
+        font-size: 18px;
+    }
+    
+    .img-logo-rodape {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-rodape p {
+        font-size: 12px;
+    }
+    
+    .img-logo-rodape {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container-rodape p {
+        font-size: 10px;
+    }
+    
+    .img-logo-rodape {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-rodape p {
+        font-size: 8px;
+    }
+    
+    .img-logo-rodape {
+        width: 40%;
+    }
+}
